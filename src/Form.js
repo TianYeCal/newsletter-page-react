@@ -7,6 +7,7 @@ import { useGlobalContext } from "./context";
 const Form = () => {
   const { setShow, setEmail } = useGlobalContext();
   const [error, setError] = useState("");
+  // eslint-disable-next-line no-useless-escape
   const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   const [emailAddress, setEmailAddress] = useState("");
   const handleSubmit = (e) => {
